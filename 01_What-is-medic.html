@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Medic! The personal health assistant app.">
+    <meta name="keywords" content="Mobile Application, Medical Mobile Application, Symptom checker, Locate a doctor">
+    <meta name="author" content="Horizon team studying at Digital Skills Academy. Douglas Abraham, Martina Borg, Peter Boyd, Paul Daniel and Tom Walsh form part of Horizon.">
+
+    <title>Medic!</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/myCSS.css">    
+
+  </head>
+
+  <body onload="expandAccordionExt()">
+    <!-- This is the navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <!-- Header -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse"> 
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="About.html"><img src="img/HorizonLogo.png" class="brandLogo"></a>
+        </div>
+        <!--collapsible part below-->
+        <div class="collapse navbar-collapse" id="navHeaderCollapse">
+          <!-- Navbar menu right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Home.html"><span class="glyphicon glyphicon-home"><span> Home</span></span></a></li>
+            <li><a href="About.html"><span class="glyphicon glyphicon-user"><span> About</span></span></a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-plus">
+                <span class="menuText"> Medic!</span><span class="caret"></span>
+              </a>
+              <!-- Section for design specification -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="01_What-is-medic.html" class="dropdownSubhead"><span class="dropdownSubtext">What is it?</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Overview"><span>Design overview</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Definition"><span>Product definition</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Video"><span>Video pitch</span></a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="02_Who-will-use-medic.html" class="dropdownSubhead"><span class="dropdownSubtext">Who will use it?</span></a></li>
+                <li class="divider"></li>
+                <li><a href="03_How-will-medic-be-used.html" class="dropdownSubhead"><span class="dropdownSubtext">How will it be used?</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#4-UML"><span>UML overview</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-Scenarios"><span>User scenarios</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-UseCases"><span>Task cases &amp; use cases</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-UseCaseDiagrams"><span>Use case diagrams</span></a></li>
+                <li class="divider"></li>
+                <li><a href="04_Medic-product-design.html" class="dropdownSubhead"><span class="dropdownSubtext">Product design</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-StructureMap"><span>Structure map</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-Wireframes"><span>Wireframes</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-TaskDiagram"><span>Task diagram</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-Storyboards"><span>Storyboards</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-StateTransition"><span>State transition diagram</span></a></li>
+                <li class="divider"></li>
+                <li><a href="05_Appendices.html" class="dropdownSubhead"><span class="dropdownSubtext">Appendices</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix1"><span>Appendix 1: Sprint plan</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix2"><span>Appendix 2: Trello board</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix3"><span>Appendix 3: Use cases</span></a></li>
+                <li class="divider"></li>
+                <li><a href="06_References.html" class="dropdownSubhead"><span class="dropdownSubtext">References</span></a></li>
+                <li class="divider"></li>
+              </ul>
+            </li>
+            <li><a href="Contact.html"><span class="glyphicon glyphicon-envelope"><span> Contact</span></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-thumbs-up">
+                <span class="menuText"> Follow</span><span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
+                <li><a href="http://www.twitter.com/" target="_blank"><span>Twitter</span></a></li>
+                <li><a href="http://www.instagram.com/" target="_blank"><span>Instagram</span></a></li>
+                <li><a href="http://www.linkedin.com/" target="_blank"><span>LinkedIn</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    <!-- main page content -->
+    <div class="container">  
+      <div class="col-xs-12 col-sm-8">
+        <h2>Medic! - what is it?</h2>
+        <p>
+          Medic! is a phone or tablet Application that provides convenient medical assistance to students/travellers while away from home. The vast majority of young travellers and students are budget focused, motivated to display independence and not needing to rely on their parents whilst also enjoying themselves. The cost of visiting a doctor can be restrictive and not always realistic if funds are tight. Having the ability to have a doctor at your fingertips and knowing that you can find one if needs be is satisfying to not only the traveller/student but also to the parent. Medic! Provides users with the medical assistance they need when they need it most!
+        </p>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#1-Overview">
+                Design overview</a>
+              </h4>
+            </div>
+            <div id="1-Overview" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>Design overview</h4>
+                <p>Since people do not plan to get sick it is unlikely that a healthy person will have this app pre-loaded on their device. Thus the user must have access to the internet, either by mobile data (including roaming data) or by Wi-Fi (hotel or public hotspot) in order to obtain the app. This raises an interesting dilemma as we have identified that cost is a consistent concern for young travellers. The use of our app is predicated on the idea of being “minimal roaming” to reduce charges. We therefore want the app to contain as much offline functionality as possible to reduce the amount of data transfer required during use. While not making the app download so large that people feel they cannot afford the time to wait when downloading and limiting functionality because elements are out of date or not on the device.</p>
+                <p>Our analysis of competitor apps revealed that those which use a diagnostic flow to generate medical advice always require an internet connection and conversely, those which worked offline did not provide a heuristic diagnostic response to the user input. While it has not been possible to confirm, as the information is not readily available, the assumption is that the database used to generate the medical advice is simply too large to fit on a phone. Thus to retain the core functionality, it will be necessary to use an internet connection in order to process the user’s input. Another important function of the app which relies on internet access is the mapping of health providers local to the user. In order to reduce the reliance on mobile data, which could prove expensive, an option to pre- load map data for the local region, or a region being travelled to will help to offset the data use of the medical advice. The assumption is that this would allow users either in need of medical care, or wanting to take a precaution (perhaps based on previous experience), to configure the app using e.g. hotel Wi-Fi to carry as much useful functionality as possible while reducing the need to use mobile data for anything other than for medical advice.</p>
+                <p>In summary, the full use of this app will be supported by regular access to Wi-Fi with access to mobile data restricted unless specifically requested by the user. It is important that the functionality achieves a careful balance between functional power and cost effectiveness.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#1-Definition">
+                Product definition</a>
+              </h4>
+            </div>
+            <div id="1-Definition" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>Product definition</h4>
+                <p>Medic! is targeted at users between the ages of 18 and 25 who are intending to leave home to study and /or travel. The application is accessed through a phone or tablet with GPS / location-based capabilities, on both android and iOS. It is secure &amp; cloud-based to allow the user’s information to be stored within profiles and accessed from any Internet terminal.</p>
+                <p>The user will be required to set up a profile and input some specific medical information before being able to begin. The mobile interface should be simple and uncluttered to allow simple input of symptoms. The combination of live data from wearables and other devices can also be collected to allow for an ongoing medical history to be compiled and more accurate information to be provided.</p>
+                <p>Once the symptoms are diagnosed, options are made available to you, possible treatments or the location and contact details of the nearest appropriate GP, dentist or hospital. The mobile device will be able to navigate you to the destination safely.</p>
+                <p>Other services include recording your medical history, storing of prescriptions and allowing your family doctor back at home to monitor your medical status throughout your time away.</p>
+                <p>The functional objectives of Medic! have been broken down into the following modules which each provide distinct functionality. The core functioning of the app is the generation of health advice based on the user’s core physical details and input in the medical advice flow. The result of this process if the generation of useful self-care advice, including referral to a health provider if the condition requires medical investigation and finally provision of local points of interest to facilitate the user’s needs. An example could be that a user has sprained their ankle, proceeds through the questions provided by the app with final advice to go to a pharmacy, obtain anti-inflammatories and a compression dressing and rest for 72 hours while taking the anti-inflammatories once every 4 hours up to the maximum recommended daily dose, with directions to contact a health provider if the symptoms do not decrease. Built around this core functionality are various “quality of life” options designed to give the user ways to customize the balance of the app’s memory and internet usage and useful account functions to allow for the user to keep all of their information up to date and correct. The functionality is designed to provide a simple flow with comprehensive help text in order to be accessible to expert and novice users alike. The cloud synchronization allows users to uninstall the app when at home and re-install later without having to re-input their information or lose access to their previous activity.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#1-Video">
+                Video pitch</a>
+              </h4>
+            </div>
+            <div id="1-Video" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>An overview of the Medic! app plus a look at the prototype - best viewed full-screen</p>
+                <video width="640" height="360" controls>
+                <source src="vid/MedicVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="col-sm-4">
+        <div class="col-xs-8 sideLogo">  
+          <a href="Home.html"><img src="img/medic-02.png" class="img-responsive"></a>
+        </div>
+        <div class="col-xs-12 sideButton-active">  
+          <a href="01_What-is-medic.html">What is it? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="02_Who-will-use-medic.html">Who will use it? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="03_How-will-medic-be-used.html">How will it be used? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="04_Medic-product-design.html">Product design <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="05_Appendices.html">Appendices <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="06_References.html">References <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+      </aside>
+
+      <!-- footer -->
+      <div class="row">
+        <footer class="col-xs-12">
+          <p class="text-center">&copy; copyright 2017</p>
+        </footer>
+      </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+
+    <!-- Latest compiled bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/menuSlide.js"></script>
+    <script src="js/openAccordion.js"></script>
+    <script src="js/windowReload.js"></script>
+  </body>
+</html>

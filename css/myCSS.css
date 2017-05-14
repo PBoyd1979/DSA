@@ -1,0 +1,66 @@
+/*Test for areas, borders etc... enable or disable to see elements*/
+/** {
+	border: solid 1px black;
+}*/
+
+/*Peter's CSS here*/
+video {
+    width: 100%;
+    height: auto;
+}
+
+.sideButton {
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    background-color: #c9f2cd;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 125%;
+}
+
+.sideButton-active {
+    font-weight: bold;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    background-color: #98faa1;
+    box-shadow: 3px 3px 5px #888888;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 125%;
+}
+
+.toDo {
+    background-color: yellow;
+    color: blue;
+    font-weight: bold;
+}
+
+.sideLogo {
+    box-shadow: 3px 3px 5px #888888;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.brandLogo {
+    height: 27.5px;
+    margin-bottom: auto;
+}
+
+.dropdownSubtext {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.dropdownSubhead {
+    background-color: aquamarine; 
+}
+
+h4 {
+    font-weight: bold;
+}
+
+/*Martina's CSS here*/

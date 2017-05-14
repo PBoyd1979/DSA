@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Medic! The personal health assistant app.">
+    <meta name="keywords" content="Mobile Application, Medical Mobile Application, Symptom checker, Locate a doctor">
+    <meta name="author" content="Horizon team studying at Digital Skills Academy. Douglas Abraham, Martina Borg, Peter Boyd, Paul Daniel and Tom Walsh form part of Horizon.">
+
+    <title>Medic!</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/myCSS.css">    
+
+  </head>
+
+  <body onload="expandAccordionExt()">
+    <!-- This is the navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <!-- Header -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse"> 
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="About.html"><img src="img/HorizonLogo.png" class="brandLogo"></a>
+        </div>
+        <!--collapsible part below-->
+        <div class="collapse navbar-collapse" id="navHeaderCollapse">
+          <!-- Navbar menu right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Home.html"><span class="glyphicon glyphicon-home"><span> Home</span></span></a></li>
+            <li><a href="About.html"><span class="glyphicon glyphicon-user"><span> About</span></span></a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-plus">
+                <span class="menuText"> Medic!</span><span class="caret"></span>
+              </a>
+              <!-- Section for design specification -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="01_What-is-medic.html" class="dropdownSubhead"><span class="dropdownSubtext">What is it?</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Overview"><span>Design overview</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Definition"><span>Product definition</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Video"><span>Video pitch</span></a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="02_Who-will-use-medic.html" class="dropdownSubhead"><span class="dropdownSubtext">Who will use it?</span></a></li>
+                <li class="divider"></li>
+                <li><a href="03_How-will-medic-be-used.html" class="dropdownSubhead"><span class="dropdownSubtext">How will it be used?</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#4-UML"><span>UML overview</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-Scenarios"><span>User scenarios</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-UseCases"><span>Task cases &amp; use cases</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-UseCaseDiagrams"><span>Use case diagrams</span></a></li>
+                <li class="divider"></li>
+                <li><a href="04_Medic-product-design.html" class="dropdownSubhead"><span class="dropdownSubtext">Product design</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-StructureMap"><span>Structure map</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-Wireframes"><span>Wireframes</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-TaskDiagram"><span>Task diagram</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-Storyboards"><span>Storyboards</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-StateTransition"><span>State transition diagram</span></a></li>
+                <li class="divider"></li>
+                <li><a href="05_Appendices.html" class="dropdownSubhead"><span class="dropdownSubtext">Appendices</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix1"><span>Appendix 1: Sprint plan</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix2"><span>Appendix 2: Trello board</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix3"><span>Appendix 3: Use cases</span></a></li>
+                <li class="divider"></li>
+                <li><a href="06_References.html" class="dropdownSubhead"><span class="dropdownSubtext">References</span></a></li>
+                <li class="divider"></li>
+              </ul>
+            </li>
+            <li><a href="Contact.html"><span class="glyphicon glyphicon-envelope"><span> Contact</span></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-thumbs-up">
+                <span class="menuText"> Follow</span><span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
+                <li><a href="http://www.twitter.com/" target="_blank"><span>Twitter</span></a></li>
+                <li><a href="http://www.instagram.com/" target="_blank"><span>Instagram</span></a></li>
+                <li><a href="http://www.linkedin.com/" target="_blank"><span>LinkedIn</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    <!-- main page content -->
+    <div class="container">  
+      <div class="col-xs-12 col-sm-8">  
+        <h2>Medic! - references</h2>
+        <p>Please see below for reference material used for the development of the app proof of concept</p>
+        <ol>
+          <li>Lucidchart. (2017). <em>Use Case Diagram in UML.</em> [online] <br />
+          Available at: <a href="https://www.lucidchart.com/pages/uml/use-case-diagram">https://www.lucidchart.com/pages/uml/use-case-diagram</a> [Accessed 23 Apr. 2017].</li>
+          <li>Olsen, D. (2015). <em>The lean product playbook.</em> 1st ed. Hoboken, N.J.: Wiley.</li>
+          <li>Uml-diagrams.org. (2017). <em>UML use case include relationship shows that behavior of the included use case is inserted into the behavior of the including use case.</em> [online] <br />
+          Available at: <a href="http://www.uml-diagrams.org/use-case-include.html">http://www.uml-diagrams.org/use-case-include.html</a> [Accessed 23 Apr. 2017].</li>
+          <li>Paulos, E. (2015). <em>STORYBOARDS, SCENARIOS, AND PERSONAS.</em> 1st ed. [ebook] University of California. <br />
+          Available at: <a href="http://teaching.paulos.net/cs160_FL2015/lectures/cs160-fl15-02P.pdf">http://teaching.paulos.net/cs160_FL2015/lectures/cs160-fl15-02P.pdf</a> [Accessed 23 Apr. 2017].</li>
+          <li>Personas. (n.d.). 1st ed. [ebook] Usability.gov. <br />
+          Available at: <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">https://www.usability.gov/how-to-and-tools/methods/personas.html</a> [Accessed 24 Apr. 2017].</li>
+          <li>McAdam, B. (2017) UX &amp; Concept Design Unit 10, <a href="www.digitalskillsacademy.com/" target="_blank">Digital Skills Academy</a></li>
+          <li>DUCKETT, J., DUCKETT, J. AND DUCKETT, J.
+          <em>Web design with HTML, CSS, JavaScript and jQuery set</em>
+          In-text: (Duckett, Duckett and Duckett, 2014)
+          Your Bibliography: Duckett, J., Duckett, J. and Duckett, J. (2014). Web design with HTML, CSS, JavaScript and jQuery set. 1st ed. Indianapolis, IN: John Wiley &amp; Sons, Inc.</li>
+          <li>PILGRIM, M.
+          <em>HTML5</em>
+          In-text: (Pilgrim, 2010)
+          Your Bibliography: Pilgrim, M. (2010). HTML5. 1st ed. Beijing [u.a.]: O'Reilly.</li>
+          <li>KRUG, S.
+          <em>Don't make me think, revisited</em>
+          In-text: (Krug, 2014)
+          Your Bibliography: Krug, S. (2014). Don't make me think, revisited. 1st ed. [Berkeley, Calif.]: New Riders.</li>
+          <li>GARRETT, J. J.
+          <em>The elements of user experience</em>
+          In-text: (Garrett, 2011)
+          Your Bibliography: Garrett, J. (2011). The elements of user experience. 1st ed. Berkeley, CA: New Riders.</li>
+        </ol>
+      </div>
+      
+      <!-- Sidebar -->
+      <aside class="col-sm-4">
+        <div class="col-xs-8 sideLogo">  
+          <a href="Home.html"><img src="img/medic-02.png" class="img-responsive"></a>
+        </div>
+        <div class="col-xs-12 sideButton">  
+          <a href="01_What-is-medic.html">What is it? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="02_Who-will-use-medic.html">Who will use it? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="03_How-will-medic-be-used.html">How will it be used? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="04_Medic-product-design.html">Product design <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="05_Appendices.html">Appendices <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton-active">
+          <a href="06_References.html">References <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+      </aside>
+
+      <!-- footer -->
+      <div class="row">
+        <footer class="col-xs-12">
+          <p class="text-center">&copy; copyright 2017</p>
+        </footer>
+      </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+
+    <!-- Latest compiled bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/menuSlide.js"></script>
+    <script src="js/openAccordion.js"></script>
+    <script src="js/windowReload.js"></script>
+  </body>
+</html>

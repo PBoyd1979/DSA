@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Medic! The personal health assistant app.">
+    <meta name="keywords" content="Mobile Application, Medical Mobile Application, Symptom checker, Locate a doctor">
+    <meta name="author" content="Horizon team studying at Digital Skills Academy. Douglas Abraham, Martina Borg, Peter Boyd, Paul Daniel and Tom Walsh form part of Horizon.">
+
+    <title>Medic!</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/myCSS.css">    
+
+  </head>
+
+  <body onload="expandAccordionExt()">
+    <!-- This is the navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <!-- Header -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse"> 
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="About.html"><img src="img/HorizonLogo.png" class="brandLogo"></a>
+        </div>
+        <!--collapsible part below-->
+        <div class="collapse navbar-collapse" id="navHeaderCollapse">
+          <!-- Navbar menu right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Home.html"><span class="glyphicon glyphicon-home"><span> Home</span></span></a></li>
+            <li><a href="About.html"><span class="glyphicon glyphicon-user"><span> About</span></span></a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-plus">
+                <span class="menuText"> Medic!</span><span class="caret"></span>
+              </a>
+              <!-- Section for design specification -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="01_What-is-medic.html" class="dropdownSubhead"><span class="dropdownSubtext">What is it?</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Overview"><span>Design overview</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Definition"><span>Product definition</span></a>
+                </li>
+                <li>
+                  <a href="01_What-is-medic.html#1-Video"><span>Video pitch</span></a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="02_Who-will-use-medic.html" class="dropdownSubhead"><span class="dropdownSubtext">Who will use it?</span></a></li>
+                <li class="divider"></li>
+                <li><a href="03_How-will-medic-be-used.html" class="dropdownSubhead"><span class="dropdownSubtext">How will it be used?</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#4-UML"><span>UML overview</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-Scenarios"><span>User scenarios</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-UseCases"><span>Task cases &amp; use cases</span></a></li>
+                <li><a href="03_How-will-medic-be-used.html#3-UseCaseDiagrams"><span>Use case diagrams</span></a></li>
+                <li class="divider"></li>
+                <li><a href="04_Medic-product-design.html" class="dropdownSubhead"><span class="dropdownSubtext">Product design</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-StructureMap"><span>Structure map</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-Wireframes"><span>Wireframes</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-TaskDiagram"><span>Task diagram</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-Storyboards"><span>Storyboards</span></a></li>
+                <li><a href="04_Medic-product-design.html#4-StateTransition"><span>State transition diagram</span></a></li>
+                <li class="divider"></li>
+                <li><a href="05_Appendices.html" class="dropdownSubhead"><span class="dropdownSubtext">Appendices</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix1"><span>Appendix 1: Sprint plan</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix2"><span>Appendix 2: Trello board</span></a></li>
+                <li><a href="05_Appendices.html#5-Appendix3"><span>Appendix 3: Use cases</span></a></li>
+                <li class="divider"></li>
+                <li><a href="06_References.html" class="dropdownSubhead"><span class="dropdownSubtext">References</span></a></li>
+                <li class="divider"></li>
+              </ul>
+            </li>
+            <li><a href="Contact.html"><span class="glyphicon glyphicon-envelope"><span> Contact</span></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-thumbs-up">
+                <span class="menuText"> Follow</span><span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
+                <li><a href="http://www.twitter.com/" target="_blank"><span>Twitter</span></a></li>
+                <li><a href="http://www.instagram.com/" target="_blank"><span>Instagram</span></a></li>
+                <li><a href="http://www.linkedin.com/" target="_blank"><span>LinkedIn</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    <!-- main page content -->
+    <div class="container">
+      <div class="col-xs-12 col-sm-8">  
+        <h2>Medic! - how will it be used?</h2>
+        
+        
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#3-UML">
+                UML overview</a>
+              </h4>
+            </div>
+            <div id="3-UML" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h3>UML - Unified Modelling Language</h3>
+                <p>
+                  Based on a collaboration of Grady, Booch &amp; Rumbaugh (The Three Amigos) and interest from the big three at the time Microsoft, Oracle and IBM in the mid 90’s. A book was published called ‘The Unified Modelling Language User Guide’ in 1999 providing the industry standard we use today. <br />  
+                  The basis of UML came from a number of other notions:
+                </p>
+                <ul>
+                  <li>Object Orientated Design</li>
+                  <li>Object Modeling Technique</li>
+                  <li>Object Orientated Software Engineering</li>
+                </ul>
+                <p>
+                  The purpose of UML was to:
+                </p>
+                <ul>
+                  <li>Provide software developers a similar process and language to communicate ideas</li>
+                  <li>Offering visual tools and user focused techniques</li>
+                </ul>
+                <p>
+                  Digital Skills Academy has produced a simple Infographic that shows the UML process which was used in the development of Medic!
+                </p>
+                <img src="img/UML.png" class="img-responsive">
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#3-Scenarios">
+                Scenarios</a>
+              </h4>
+            </div>
+            <div id="3-Scenarios" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>The key questions to be asked when producing a scenario</h4>
+                <ul>
+                  <li>Is it technology free?</li>
+                  <li>Does the user have a clear goal?</li>
+                  <li>Have you set a scene where the user achieves that goal?</li>
+                  <li>Have you avoided a specific reference to a interaction that is designed?</li>
+                  <li>Are you scenarios too similar or inadequate?</li>
+                </ul>
+                <hr />
+                <h4>1 - The traveler</h4>
+                <h4>Now</h4>
+                <p>When I'm travelling different place every second day just enough time for me to get my bearings, explore and move on. Cost is managed closely and I work on a strict budget, ensuring I get to see much as possible while I travel. So getting sick or even not being 100% can lead to huge complications and these environments. Asking the local hostel set the past have been a problem with medical centres and hacks giving kickbacks of them for referrals, cost can also be an issue. Some of these places also can be in areas that are not that safe and difficult to get to.</p>
+                <h4>Medic!</h4>
+                <p>When I'm travelling to a different place every second day just enough time for me to get my bearings, explore and move on. Cost is managed closely and I work on a strict budget, ensuring I get to see much as possible while I travel. It can be difficult at times especially when I cannot speak the local language. So getting sick or even not being 100% can lead to huge complications and these environments. To have a reliable diagnosis by going onto my phone and interacting with medic! was brilliant! With all my vital information already known to medic the process of it letting know my symptoms was simple and easy to do. Despite limited data coverage in the area Medic! still was able to provide a quick reliable diagnosis with possible options for treatment. One of the options was to guide me a nearby medical facility to consult a professional who was reputable and trustworthy. This information and service insured that I had peace of mind and knowledge why that was back home you I was being cared for.</p>
+                <hr />
+                <h4>2 - The Foreign Student (Little fish in a big pond)</h4>
+                <h4>Now</h4>
+                <p>Being away from my parents and family for the first time in a foreign place is quite daunting. Finding my feet is a challenge and making new friends and socialising as well as getting on top of the school work can be quite stressful. I'm also getting to enjoy the social side more and starting to feel a little run down, possibly a cold of flu. With nominal funds left this month, I would have to spend my last pennies or ask my parents for funds which I really don't want to do.</p>
+                <h4>Medic!</h4>
+                <p>Being away from my parents and family for the first time in a foreign place is quite daunting. Finding my feet is a challenge and making new friends and socialising as well as getting on top of the school work can be quite stressful. I'm also getting to enjoy the social side more and starting to feel a little run down, possibly with a cold of flu. With nominal funds left this month, and not wanting to ask my parents for more money, I’m hesitant to spend it on going to see a doctor. Use my phone to get a diagnosis from a reliable source made things easy. Medic! Already knew so much about me and was able to take the additional information I provided to make a quick and simple diagnosis. Medic! Was able to show me where the nearest pharmacy was and Dr as well as contact details, allowing me with the information to make an informed decision.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#3-UseCases">
+                Task cases &amp; Use cases</a>
+              </h4>
+            </div>
+            <div id="3-UseCases" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>
+                  <span class="glyphicon glyphicon-chevron-right"></span> A use case represents the list of tasks that actors can perform (see in <a href="05_Appendices.html#5-useCases">appendices</a>)</p>
+                <p>
+                  <span class="glyphicon glyphicon-chevron-right"></span> Shows processes &amp; who/what uses them
+                </p>
+                <ul>
+                  <li>See the list of use case diagrams</li>
+                </ul>
+                <p>
+                  <span class="glyphicon glyphicon-chevron-right"></span> Actor - represents the role of the a user of their system
+                </p>
+                <ul>
+                  <li>Medic! User - See persona </li>
+                  <li>Medic! App - Mobile Application that allows the user to get diagnosed and locate treatment.</li>
+                  <li>Medic! Server - Additional services available to the user from the web.Use case - represents the task the system will support</li>
+                </ul>
+                <p>
+                  <span class="glyphicon glyphicon-chevron-right"></span> Actors are connected to use cases if user plays some part in the task
+                </p>
+                <hr />
+                <div>
+                  <h4>Task cases</h4>
+                  <h4>1.1 Get diagnosed for a personal medical concern</h4>
+                  <p><strong>Activity description</strong></p>
+                  
+                  <table class="table table-responsive col-xs-12">
+                    <thead>
+                      <tr>
+                        <th>Step</th>
+                        <th>User activity</th>
+                        <th>System responsibility</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Launch app
+                        </td>
+                        <td>
+                          Launch app
+                        </td>
+                        <td>
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Sign in
+                        </td>
+                        <td>
+                          Provide authentication
+                        </td>
+                        <td>
+                          Authenticate user and go to Medic! home screen
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          Select '#symptom'
+                        </td>
+                        <td>
+                          Select '#symptom'* 
+                        </td>
+                        <td>
+                          Continue to review answered questions, ask next question in the logic tree. Repeat untill at a conclusion 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Decision
+                        </td>
+                        <td>
+                          Review the diagnosis provided and possible treatments
+                        </td>
+                        <td>
+                          Once there is a conclusion, display '#diagnosis' &amp; corresponding '#recommendations' to the user with recommendations on actions and/or how to treat it 
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          Select '#recommendation' for detailed information
+                        </td>
+                        <td>
+                          move to the 'detailed information' screen 
+                        </td>
+                      </tr>           
+                    </tbody>
+                  </table>
+                  <p>*As questions are asked by Medic! The user selects options provided by Medic! To drill down to the issue</p>
+                  
+                  <hr />
+                  <h4>1.2 Get Diagnosis report</h4>
+                  <p><strong>Activity description</strong></p>
+                  <table class="table table-responsive col-xs-12">
+                    <thead>
+                      <tr>
+                        <th>Step</th>
+                        <th>User activity</th>
+                        <th>System responsibility</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Select 'produce report'
+                        </td>
+                        <td>
+                          Select 'produce report'
+                        </td>
+                        <td>
+                          Saved in the user profile, a pdf report is generated and emailed to you.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Select 'translate'
+                        </td>
+                        <td>
+                          Select 'translate'
+                        </td>
+                        <td>
+                          Move to translate screen 
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          Select '#language'
+                        </td>
+                        <td>
+                          Select '#language'
+                        </td>
+                        <td>
+                          Translate the diagnosis into the language selected 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Select 'save'
+                        </td>
+                        <td>
+                          Select 'save'
+                        </td>
+                        <td>
+                          Saved in the user profile, a pdf report is generated and emailed to you. 
+                        </td>
+                      </tr>            
+                    </tbody>
+                  </table>
+                  <hr />
+                  <h4>1.3 Medic! Providing a followup service</h4>
+                  <p><strong>Activity description</strong></p>
+                  <table class="table table-responsive col-xs-12">
+                    <thead>
+                      <tr>
+                        <th>Step</th>
+                        <th>User activity</th>
+                        <th>System responsibility</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Follow Up
+                        </td>
+                        <td>
+                          Receive an alert to follow up on the symptoms
+                        </td>
+                        <td>
+                          Issues a notification 3 days after enquiring if the problem has been resolved. 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          Select 'all good'
+                        </td>
+                        <td>
+                          Issue closed 
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          Select 'still a problem"
+                        </td>
+                        <td>
+                          Go back to symptom input 
+                        </td>
+                      </tr>            
+                    </tbody>
+                  </table>
+                  <hr />
+                  <h4>2.1 Act on the Recommendations</h4>
+                  <p><strong>Activity description</strong></p>
+                  <table class="table table-responsive col-xs-12">
+                    <thead>
+                      <tr>
+                        <th>Step</th>
+                        <th>User activity</th>
+                        <th>System responsibility</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Select '#recommendation' for further information
+                        </td>
+                        <td>
+                          Select '#recommendation' for futher information
+                        </td>
+                        <td>
+                          Provide a diagnosis and select 'treatment', select 'detailed diagnosis' (link to the Medic! Online for detailed information) 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Select 'treatment'
+                        </td>
+                        <td>
+                          Select 'treatment'
+                        </td>
+                        <td>
+                          Provide list of treatments &amp; medical facilities within a 10 km radius including a 'map' option.
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          Select 'map'
+                        </td>
+                        <td>
+                          Select 'map'
+                        </td>
+                        <td>
+                          Go to map screen in the users location  
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          Select '#medical facility label'
+                        </td>
+                        <td>
+                          Select '#medical facility label'
+                        </td>
+                        <td>
+                          Produce a bubble with all avialable information on the selected location  
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Select 'user rating'
+                        </td>
+                        <td>
+                          Select 'user rating'
+                        </td>
+                        <td>
+                          Sends user online to Medic! To look at user reviews  
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          Select 'call'
+                        </td>
+                        <td>
+                          Select 'call'
+                        </td>
+                        <td>
+                          Go to phone function and and dial the number  
+                        </td>
+                      </tr> 
+                      <tr>
+                        <td>
+                          Select 'email'
+                        </td>
+                        <td>
+                          Select 'email'
+                        </td>
+                        <td>
+                          Go to email page with email address included translated Medic! Report attached 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Select 'take me there'
+                        </td>
+                        <td>
+                          Select 'take me there'
+                        </td>
+                        <td>
+                          A route is planed and transport options are shown 
+                        </td>
+                      </tr>            
+                    </tbody>
+                  </table>
+                </div>
+                <hr />
+                <h4>Use cases</h4>
+                <h4>Use case 1: Traveler registers on Medic!</h4>
+                <p><strong>Primary actor:</strong> Traveler (Medic User)</p>
+                <p><strong>Brief:</strong> The traveler downloads the Medic! app onto their device and registers to become a user. They provide their contact details and begin to build up a profile on the system.</p>
+                <p><strong>Pre-conditions:</strong> The traveler has a device that is capable of connecting to the internet and has capacity to download and install an application. The user has set up an account on the Medic! web site or through an app portal.</p>
+                <p><strong>Post-conditions:</strong> The traveler has downloaded and installed Medic! onto their device. They have registered as a user and have entered some background information to their profile.</p>
+                <p><strong>Triggers:</strong> The traveler decides they need easy access to medical advice or assistance while away from home, they decide to install the Medic! app in order to get access to this information.</p>
+                <p><strong>Normal course:</strong></p>
+                <ol>
+                  <li>The Traveler visits the App store and downloads the Medic! app onto their device.</li>
+                  <li>The systems requires that the User has registered.</li>
+                  <li>A portal is available to the User to create an account.</li>
+                  <li>The to access the Medic App the user must log in.</li>
+                  <li>The user enter into the home screen.</li>
+                  <li>The user engages with the App answering a series of questions.</li>
+                  <li>The App continues asking questions until it has sufficient information to provide a diagnosis.</li>
+                  <li>The App also can use information from the users profile and third party apps and wearables.</li>
+                  <li>The user can then save the diagnosis and get it translated into another language of their choosing.</li>
+                  <li>The user also has the option to to look for medical assistance in their vicinity.</li>
+                </ol>
+                <h4>Use case 2: Traveler gets diagnosed</h4>
+                <p><strong>Primary actor:</strong> Traveler</p>
+                <p><strong>Brief:</strong> The traveler becomes unwell while away from home, they input their symptoms into Medic! and receive a diagnosis and recommended course of action.</p>
+                <p><strong>Pre-conditions:</strong> The traveler has Medic! installed on their device and has connection to the internet and has a device that has GPS.</p>
+                <p><strong>Post-conditions:</strong> The traveler has input their symptoms and received a diagnosis and recommended course of action.</p>
+                <p><strong>Triggers:</strong> The traveler becomes unwell while in a foreign country and they decide to seek assistance using the Medic! app that they have access to on their device.</p>
+                <p><strong>Normal course:</strong></p>
+                <ol>
+                  <li>The User has received a diagnosis.</li>
+                  <li>The User can ask the app to show him/her information on where to find medical help.</li>
+                  <li>The User then can select to email, call or travel to the healthcare provider</li>
+                  <li>The user is taken to a map page showing all local healthcare providers</li>
+                  <li>All health care providers are rated by users and offer information on the them.</li>
+                  <li>The user can read reviews of Health providers posted by other users.</li>
+                  <li>When the User selects email the app utilised the mobile devices mail app and attached a repot in the language of choice.</li>
+                  <li>When the User selects call the app utilises the mobile devices phone to present a number that can be dialled to contact the desired healthcare provider.</li>
+                  <li>When the User selects the navigation option it plants the best route to that location.</li>
+                  <li>The Medic! App will utilise the mobile devices GPS to assist.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#3-UseCaseDiagrams">
+                Use case diagrams</a>
+              </h4>
+            </div>
+            <div id="3-UseCaseDiagrams" class="panel-collapse collapse">
+              <div class="panel-body">    
+                <h4>Use case 1: Get Diagnosed</h4>
+                <h4>Purpose: How Medic! user gets diagnosed when using the app</h4>
+                <p><strong>Summary</strong></p>
+                <p>The user does not feel well and logs into their account, the application on opening they are sent to main screen allowing them to be offered questions. The questions are produced by the Medic! logic tree algorithm, and continue to be asked until diagnosis is provided, all one click with no typing. The Medic! app also uses additional info from 3rd party devices such as wearables etc. Info is also provided by user in their profile when they set up their account. When Medic! has exhausted all of its logic algorithms a list of recommended treatments is provided to the user.  Including a report can be produced and translated into another language, saved to the user's account. The user can also can choose to go to a local map which provides medical assistance and relevant information to allow the user to go and get treatment or purchase medication.</p>
+                <figure>
+                  <img src="img/UC1.jpg" class="img-responsive">
+                  <figcaption>Use case 1. - Get Diagnosed.</figcaption>
+                </figure>
+                <hr />
+                <h4>Use case 2: Get fixed</h4>
+                <h4>Purpose: Use Medic! app to get treatment</h4>
+                <p><strong>Summary</strong></p>
+                <p>The user reviews treatment recommendations and can review detailed diagnosis on device. A report can be produced and translated into another language, saved to the users account. The user can also can choose to go to a local map (email, address, phone number, Medic! rating) which provides medical assistance and relevant information to allow the user to go and get treatment or purchase medication. The user selects which option they what i.e option to email (produce report, option to get translation), option to call, option to navigate to a service provider.</p>
+                <figure>
+                  <img src="img/UC2.jpg" class="img-responsive">
+                  <figcaption>Use case 2. - Get Fixed.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="col-sm-4">
+        <div class="col-xs-8 sideLogo">  
+          <a href="Home.html"><img src="img/medic-02.png" class="img-responsive"></a>
+        </div>
+        <div class="col-xs-12 sideButton">  
+          <a href="01_What-is-medic.html">What is it? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="02_Who-will-use-medic.html">Who will use it? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton-active">
+          <a href="03_How-will-medic-be-used.html">How will it be used? <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="04_Medic-product-design.html">Product design <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="05_Appendices.html">Appendices <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+        <div class="col-xs-12 sideButton">
+          <a href="06_References.html">References <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+      </aside>
+
+      <!-- footer -->
+      <div class="row">
+        <footer class="col-xs-12">
+          <p class="text-center">&copy; copyright 2017</p>
+        </footer>
+      </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+
+    <!-- Latest compiled bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/menuSlide.js"></script>
+    <script src="js/openAccordion.js"></script>
+    <script src="js/windowReload.js"></script>
+  </body>
+</html>
